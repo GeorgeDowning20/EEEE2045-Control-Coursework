@@ -1,0 +1,135 @@
+\documentclass[12pt]{article}
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[english]{babel}
+\usepackage[numbers]{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{tikz}
+\usepackage{pgfplots} 
+\usepackage{minted}
+\usepackage{placeins}
+
+
+\graphicspath{{images/}}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+\usetikzlibrary{angles,quotes} % for pic (angle labels)
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+
+\title{EEEE2045 Control Coursework}								% Title
+\author{George Downing}								                        % Author
+\date{October 24, 2022}											            % Date
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+    \centering
+    \vspace*{0.5 cm}
+    \includegraphics[scale = 0.4]{uon.png}\\[1.0 cm]	% University Logo
+    \textsc{\LARGE University of Nottingham}\\[2.0 cm]	% University Name
+    \textsc{\Large EEEE2045:}\\[0.5 cm]				% Course Code
+    \textsc{\large Control Coursework}\\[0.5 cm]				% Course Name
+    \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+    { \huge \bfseries \thetitle}\\
+    \rule{\linewidth}{0.2 mm} \\[1.5 cm]
+
+    \begin{minipage}{0.4\textwidth}
+        \begin{flushleft} \large
+            \emph{Author:}\\
+            \theauthor
+        \end{flushleft}
+    \end{minipage}~
+    \begin{minipage}{0.4\textwidth}
+        \begin{flushright} \large
+            \emph{Student Number:} \\
+            20273662									% Your Student Number
+        \end{flushright}
+    \end{minipage}\\[2 cm]
+
+    {\large \thedate}\\[2 cm]
+
+    \vfill
+
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Abstract}
+In the optical absorption of semiconductor experiment, we discovered the Urbach slope, the band gap energy for both; direct and indirect band gap semiconductor. The experiment was carried out using Matlab to automate the wavelengths by outputting a signal through a stepper motor to the monochromator and analysing the data inputted back in through plotting graphs. The Urbach slope was found to be $(0.182\pm0.008)$ eV, the band gap energy for a direct band gap semiconductor to be $(1.431\pm0.002)$ eV and the band gap energy for an indirect band gap semiconductor to be $(1.8305\pm0.0146)$ eV.
+
+
+\section{Introduction}
+testZ~\cite{pratt_2022}
+
+\section{Theory}
+hello123
+
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        Sign type            & Sign Observed \\ \hline
+        Distance Measurement & yes           \\ \hline
+        Green Short Cut      & yes           \\ \hline
+        Red Short Cut        & yes           \\ \hline
+        Blue Short Cut       & yes           \\ \hline
+        Follow Black         & yes           \\ \hline
+        IMU Measurement      & yes           \\ \hline
+        Shape Counter        & yes           \\ \hline
+        Stop Light           & yes           \\ \hline
+        Yellow Short Cut     & yes           \\ \hline
+    \end{tabular}
+    \caption{Table to show success of identifying a sign within a frame}
+    \label{tab:identifying a sign within a frame}
+\end{table}
+
+table \ref{tab:identifying a sign within a frame}
+
+
+\subsection{Code Overview}
+\begin{figure}[ht!]
+\inputminted[firstline=12, lastline=50,fontsize=\scriptsize, tabsize=4]{c}{helloworld.c}
+   
+    \caption{Handler routine for the Arduino nano written to communicate to I2c with the EPS32 }
+    \label{fig:i2chandler}
+\end{figure}\FloatBarrier
+
+\begin{figure}
+    \centering
+    \input{matlab/myfile.tex}
+    \caption{test}
+    \label{fig:test}
+\end{figure}\FloatBarrier
+
+
+\bibliographystyle{IEEEtranN}
+\bibliography{biblist}
+
+\end{document}
