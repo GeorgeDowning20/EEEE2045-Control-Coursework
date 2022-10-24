@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.10.5)  24 OCT 2022 20:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.10.5)  24 OCT 2022 23:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -690,7 +690,7 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
  on input line 3.
 
 (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/title_page.tex
-<uon.png, id=50, 956.57375pt x 401.5pt>
+<uon.png, id=54, 956.57375pt x 401.5pt>
 File: uon.png Graphic file (type png)
 <use uon.png>
 Package pdftex.def Info: uon.png  used on input line 4.
@@ -705,38 +705,58 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.13 
-      [1] [2] (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise1.tex (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex1.tex) [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+      [1] [2] [3] (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise1.tex (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex1.tex) [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.23 
-     ]) [4] [5] [6] (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
+     ]) (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise2.tex (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex2.tex) [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.26 \end{table}\FloatBarrier
+                             ]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+(/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex2_2.tex) [6pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.40 \end{equation}
+                   pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.40 \end{equation}
+                   ]) [7] [8] [9] (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 25.
 
-) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+) [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3208AB7FDE8BB9719700D0CC6548F2FB;632.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
+(rerunfilecheck)             Checksum: 165A5608DE4FA78FD51BBFFD5B0C67DB;676.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 31193 strings out of 481239
- 748080 string characters out of 5920377
- 1175589 words of memory out of 5000000
- 45850 multiletter control sequences out of 15000+600000
+ 31242 strings out of 481239
+ 749391 string characters out of 5920377
+ 1226190 words of memory out of 5000000
+ 45881 multiletter control sequences out of 15000+600000
  539423 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,11n,100p,1059b,2091s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,12n,100p,1059b,2091s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.pdf" (8 pages, 123025 bytes).
+Output written on "/home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.pdf" (11 pages, 133678 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

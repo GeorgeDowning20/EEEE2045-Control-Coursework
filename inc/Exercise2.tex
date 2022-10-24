@@ -1,0 +1,43 @@
+
+\begin{equation}
+    G_{p}\left(s\right)=\frac{a}{s+a}
+    \label{eq:ex2}
+\end{equation}
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Ex2.tex}
+    \caption{Graph showing step response of the transfer function shown in \eqref{eq:ex2} where a = 1 (blue), 3 (red), 12 (green) and 20 (black) }
+    \label{fig:ex2}
+\end{figure}\FloatBarrier
+
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        a{[}arb{]} & Time Constant{[}s{]} \\ \hline
+        1          & 1                    \\ \hline
+        3          & 0.333                \\ \hline
+        12         & 0.0883               \\ \hline
+        20         & 0.05                 \\ \hline
+    \end{tabular}
+    \caption{Table to show the time constant of the system for different values of a}
+    \label{tab:ex2}
+\end{table}\FloatBarrier
+
+Figure~\ref{fig:ex2}. shows the step response of the system for different values of $a$. The steady state gain of the system is $a/a$ which is equal to 1 for all values of $a$. The time constant of the system is shown in Table~\ref{tab:ex2}. The time constant is equal to the reciprocal of the denominator at steady state. Hence the time constant is equal to $1/a$ at all values of $a$.\\
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Ex2_2.tex}
+    \caption{graph showing the step response of the transfer function shown in \eqref{eq:ex2_2} }
+    \label{fig:ex2_2}
+\end{figure}\FloatBarrier
+
+\begin{equation}
+    G_{p}\left(s\right)=\frac{a}{s-a}
+    \label{eq:ex2_2}
+\end{equation}
+
+Figure~\ref{fig:ex2_2}. shows the step response of the transfer function shown in \eqref{eq:ex2_2}. where the plant has a positive pole the system is unstable and will not converge to a steady state. the rate of change of the system is increasing and will continue to increase until the system is destroyed. 
+
