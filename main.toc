@@ -1,5 +1,12 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Abstract}{2}{section.1}%
-\contentsline {section}{\numberline {2}Introduction}{2}{section.2}%
-\contentsline {section}{\numberline {3}Theory}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Code Overview}{2}{subsection.3.1}%
+\contentsline {section}{\numberline {1}Aim of the Lab}{2}{section.1}%
+\contentsline {section}{\numberline {2}Results and Discussion}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Exercise 1}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Exercise 2}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Exercise 3}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Exercise 4a}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Exercise 4b}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Exercise 5}{4}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Design Questions and Solutions}{5}{section.3}%
+\contentsline {section}{\numberline {4}Summary and Conclusions}{6}{section.4}%
+\contentsline {section}{References}{7}{section.4}%

@@ -5,6 +5,8 @@ INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.tex
 OUTPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.log
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/doc_conf.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/doc_conf.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -325,6 +327,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/title_page.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/title_page.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/uon.png
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/uon.png
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/uon.png
@@ -355,22 +359,10 @@ INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/helloworld.c
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/5DC1AAB87F6B06FF7C241167421771645B3BA64A148A51C7209B5DF54D0110AB.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/5DC1AAB87F6B06FF7C241167421771645B3BA64A148A51C7209B5DF54D0110AB.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/5DC1AAB87F6B06FF7C241167421771645B3BA64A148A51C7209B5DF54D0110AB.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/5DC1AAB87F6B06FF7C241167421771645B3BA64A148A51C7209B5DF54D0110AB.pygtex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/myfile.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/myfile.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise1.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise1.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex1.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex1.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aux
@@ -379,7 +371,9 @@ INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb

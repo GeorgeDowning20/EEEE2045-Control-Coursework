@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[english]{babel}
+\usepackage[numbers]{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{tikz}
+\usepackage{pgfplots} 
+\usepackage{minted}
+\usepackage{placeins}
+
+\graphicspath{{images/}}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+\usetikzlibrary{angles,quotes} % for pic (angle labels)
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+
+\title{EEEE2045 Control Coursework}								% Title
+\author{George Downing}								                        % Author
+\date{October 24, 2022}											            % Date
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
