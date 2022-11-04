@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{20}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{p}{])}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{)}
+\PYG{n}{cleanfigure}
+\PYG{l+s}{matlab2tikz(\PYGZsq{}Output/ex1.tex\PYGZsq{})}\PYG{p}{;}\PYG{+w}{ }
+\end{Verbatim}

@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{figure}\PYG{p}{;}
+\PYG{n}{hold}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}
+
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{1}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{])}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}b\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{3}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{])}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{12}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{12}\PYG{p}{])}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}g\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{20}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{p}{])}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex2.tex\PYGZsq{}}\PYG{p}{);}
+
+\PYG{n+nb}{figure}\PYG{p}{;}
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{20}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{20}\PYG{p}{])}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{)}
+\PYG{n+nb}{axis}\PYG{p}{([}\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{l+m+mi}{500000}\PYG{p}{]);}
+\PYG{n}{cleanfigure}
+\PYG{l+s}{matlab2tikz(\PYGZsq{}Output/ex2\PYGZus{}2.tex\PYGZsq{})}\PYG{p}{;}\PYG{+w}{ }
+\end{Verbatim}

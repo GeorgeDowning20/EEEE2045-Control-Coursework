@@ -1,4 +1,3 @@
-
 figure;
 hold on;
 
@@ -15,11 +14,11 @@ Gp=tf([20],[1 20])
 step(Gp,'k')
 
 cleanfigure; 
-matlab2tikz('Ex2.tex');
+matlab2tikz('Output/ex2.tex');
 
 figure;
 Gp=tf([20],[1 -20])
 step(Gp)
 axis([0 1 0 500000]);
 cleanfigure
-matlab2tikz('Ex2_2.tex'); 
+matlab2tikz('Output/ex2_2.tex'); 

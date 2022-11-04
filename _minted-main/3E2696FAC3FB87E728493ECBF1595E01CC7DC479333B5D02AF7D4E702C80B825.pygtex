@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{figure}\PYG{p}{;}
+\PYG{n}{hold}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}
+
+\PYG{n}{a}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{10}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is the original plant}
+\PYG{n}{Temp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{n}{a}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is a/(s+a) for a=1}
+\PYG{n}{G}\PYG{p}{=}\PYG{n}{Gp}\PYG{o}{*}\PYG{n}{Temp}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Multiply them both together}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}b\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+
+\PYG{n}{a}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{;}
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{10}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is the original plant}
+\PYG{n}{Temp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{n}{a}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is a/(s+a) for a=1}
+\PYG{n}{G}\PYG{p}{=}\PYG{n}{Gp}\PYG{o}{*}\PYG{n}{Temp}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Multiply them both together}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+
+\PYG{n}{a}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{p}{;}
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{10}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is the original plant}
+\PYG{n}{Temp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{n}{a}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is a/(s+a) for a=1}
+\PYG{n}{G}\PYG{p}{=}\PYG{n}{Gp}\PYG{o}{*}\PYG{n}{Temp}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Multiply them both together}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}g\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+
+\PYG{n}{a}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{;}
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{10}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is the original plant}
+\PYG{n}{Temp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{n}{a}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is a/(s+a) for a=1}
+\PYG{n}{G}\PYG{p}{=}\PYG{n}{Gp}\PYG{o}{*}\PYG{n}{Temp}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Multiply them both together}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+
+\PYG{n}{cleanfigure}
+\PYG{l+s}{matlab2tikz(\PYGZsq{}Output/ex3.tex\PYGZsq{})}\PYG{p}{;}\PYG{+w}{ }
+\end{Verbatim}

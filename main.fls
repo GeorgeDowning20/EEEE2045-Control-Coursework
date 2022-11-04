@@ -5,14 +5,14 @@ INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.tex
 OUTPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.log
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/doc_conf.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/doc_conf.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Setup/inlcude.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Setup/inlcude.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -289,19 +289,57 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Setup/Conf.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Setup/Conf.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Setup/macros.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Setup/macros.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aux
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aux
 OUTPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aux
@@ -327,6 +365,27 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/title_page.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/title_page.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/uon.png
@@ -340,17 +399,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -361,21 +409,50 @@ OUTPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNU
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise1.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise1.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex1.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex1.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex1.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex1.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise2.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise2.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex2.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex2.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex2_2.tex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Ex2_2.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex2.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex2.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex2_2.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex2_2.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise3.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise3.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex3.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex3.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex1.m
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex2.m
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex3.m
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aux
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.out
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
@@ -383,3 +460,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb

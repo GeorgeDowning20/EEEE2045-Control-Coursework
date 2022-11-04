@@ -1,25 +1,27 @@
+\renewcommand{\ex}{ex1} 
+
 \begin{equation}
     G_{p}\left(s\right)=\frac{a}{s+20}
-    \label{eq:ex1}
+    \label{eq:\ex}
 \end{equation}
 
 \begin{equation}
     \lim_{s\to0}\left(G_{p}\left(s\right)\right)
-    \label{eq:ex1.1}
+    \label{eq:\ex.1}
 \end{equation}
 
 \begin{figure}[ht!]
     \centering
-    \input{matlab/Ex1.tex}
+    \input{matlab/Output/\ex.tex}
     \caption{Graph showing step response of plant }
-    \label{fig:ex1}
+    \label{fig:\ex}
 \end{figure}\FloatBarrier
 
-The plant transfer function for a simple first order system is given by \eqref{eq:ex1} where $a$ is the gain of the system and $s$ is the Laplace variable. Steady state is achieved when s approaches 0 as described by \eqref{eq:ex1.1}. Therefore the steady state gain of the system is $a/20$.
+The plant transfer function for a simple first order system is given by \eqref{eq:\ex} where $a$ is the gain of the system and $s$ is the Laplace variable. Steady state is achieved when s approaches 0 as described by \eqref{eq:\ex.1}. Therefore the steady state gain of the system is $a/20$.
 
 When $a=10$ the steady state gain is $\frac{10}{20}$ which is $0.5$.
 
-Unity gain is achieved when the gain is equal to 1 at steady state. Hence the gain of the system is equal to 1 when $a=20$. The step response of such system is shown in Figure~\ref{fig:ex1}.
+Unity gain is achieved when the gain is equal to 1 at steady state. Hence the gain of the system is equal to 1 when $a=20$. The step response of such system is shown in Figure~\ref{fig:\ex}.
 
 The time constant is the time taken for the system to reach $1-e^{-1}$ or approximately 63.2\% of its final value. The time constant is equal to the reciprocal of the denominator at steady state. Hence the time constant is equal to 0.05 at all values of $a$.
 
