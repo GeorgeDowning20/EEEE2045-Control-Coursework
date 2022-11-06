@@ -394,7 +394,6 @@ INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -421,6 +420,14 @@ INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise3.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex3.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex3.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise4a.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise4a.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex4a.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex4a.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise4b.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/inc/Exercise4b.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex4b.tex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/Output/ex4b.tex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.bbl
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default-pyg-prefix.pygstyle
@@ -432,21 +439,31 @@ INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/default.pygstyle
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex1.m
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/EDD884C676E740599810F826A350477F55D368B54C1F06F1483A4ECED48F10AA.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex2.m
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/8CDFD97F403C7608E70CF81C6072B5EEEA20E7B28678711120AFC0F366B0E766.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex3.m
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
-INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/3E2696FAC3FB87E728493ECBF1595E01CC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/6A215C27A84B2262AC9ECF0C7E0666BB55D368B54C1F06F1483A4ECED48F10AA.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/6A215C27A84B2262AC9ECF0C7E0666BB55D368B54C1F06F1483A4ECED48F10AA.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/6A215C27A84B2262AC9ECF0C7E0666BB55D368B54C1F06F1483A4ECED48F10AA.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/6A215C27A84B2262AC9ECF0C7E0666BB55D368B54C1F06F1483A4ECED48F10AA.pygtex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex2.m
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/9EA7936169E1BC69FA16DA6C85ECC8C9EA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/9EA7936169E1BC69FA16DA6C85ECC8C9EA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/9EA7936169E1BC69FA16DA6C85ECC8C9EA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/9EA7936169E1BC69FA16DA6C85ECC8C9EA20E7B28678711120AFC0F366B0E766.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex3.m
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/E191EBABD5A86ACD3CA8E60168297D5ACC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/E191EBABD5A86ACD3CA8E60168297D5ACC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/E191EBABD5A86ACD3CA8E60168297D5ACC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/E191EBABD5A86ACD3CA8E60168297D5ACC7DC479333B5D02AF7D4E702C80B825.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex4a.m
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/85221970D5150427C205E659EF4DDFBB0087DF3EF1EEA031C2338565C6AFED8B.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/85221970D5150427C205E659EF4DDFBB0087DF3EF1EEA031C2338565C6AFED8B.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/85221970D5150427C205E659EF4DDFBB0087DF3EF1EEA031C2338565C6AFED8B.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/85221970D5150427C205E659EF4DDFBB0087DF3EF1EEA031C2338565C6AFED8B.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/matlab/ex4b.m
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/2F3DF7FF1C113E47D2FE17B2DA269376FC1E1067C2502AD668492608B00E5B8E.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/2F3DF7FF1C113E47D2FE17B2DA269376FC1E1067C2502AD668492608B00E5B8E.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/2F3DF7FF1C113E47D2FE17B2DA269376FC1E1067C2502AD668492608B00E5B8E.pygtex
+INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/_minted-main/2F3DF7FF1C113E47D2FE17B2DA269376FC1E1067C2502AD668492608B00E5B8E.pygtex
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.aux
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.out
 INPUT /home/g/Uni code/Electrical Energy Conditioning and Control (EEEE2045 UNUK)/EEEE2045 Control Coursework/main.out

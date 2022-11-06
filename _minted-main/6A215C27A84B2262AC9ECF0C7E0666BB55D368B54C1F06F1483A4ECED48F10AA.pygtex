@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Gp}\PYG{p}{=}\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{20}\PYG{p}{],[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{p}{])}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plant transfer function}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+
+\PYG{n}{cleanfigure}\PYG{+w}{ }\PYG{l+s}{\PYGZpc{}cleanfigure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex1.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+\end{Verbatim}
