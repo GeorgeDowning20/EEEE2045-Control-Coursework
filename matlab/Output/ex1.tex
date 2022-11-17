@@ -23,7 +23,7 @@ every outer y axis line/.append style={white!40!black},
 every y tick label/.append style={font=\color{white!40!black}},
 every y tick/.append style={white!40!black},
 ymin=0,
-ymax=1,
+ymax=1.1,
 axis background/.style={fill=white}
 ]
 \addplot [color=mycolor1, forget plot]
@@ -113,6 +113,22 @@ axis line style={draw=none},
 ticks=none,
 title style={font=\bfseries},
 title={Step Response},
+axis x line*=bottom,
+axis y line*=left
+]
+\end{axis}
+
+\begin{axis}[%
+width=5.895in,
+height=4.421in,
+at={(0in,0in)},
+scale only axis,
+xmin=0,
+xmax=1,
+ymin=0,
+ymax=1,
+axis line style={draw=none},
+ticks=none,
 axis x line*=bottom,
 axis y line*=left
 ]

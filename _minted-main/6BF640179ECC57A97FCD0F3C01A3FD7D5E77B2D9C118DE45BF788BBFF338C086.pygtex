@@ -1,0 +1,60 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Gp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{6}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{15}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plant transfer function}
+
+\PYG{n}{Kp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of proportonality to 1}
+\PYG{n}{Ki}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{8.354}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of integration to 8.354}
+
+\PYG{n}{Gc}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{n}{Kp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{Kp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Ki}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} controller transfer function}
+\PYG{n}{G}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{Gp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Gc}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} forward path transfer function}
+
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} create new figure}
+\PYG{n}{rlocus}\PYG{p}{(}\PYG{n}{G}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+\PYG{n}{sgrid}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} apply grid of s plane}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/Q4\PYGZus{}1.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+
+\PYG{n}{Kp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{67.333}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of proportonality to 67.333}
+\PYG{n}{Ki}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{8.354}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of integration to 8.354}
+
+\PYG{n}{Gc}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{n}{Kp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{Kp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Ki}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} controller transfer function}
+\PYG{n}{G}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{Gp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Gc}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} forward path transfer function}
+\PYG{n}{CLTF}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{feedback}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} closed loop transfer function}
+
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} create new figure}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{CLTF}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/Q4\PYGZus{}1\PYGZus{}1.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+
+\PYG{n}{w}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{linspace}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{300}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n+nb}{pi}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{500}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} create frequency vector}
+\PYG{p}{[}\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{c}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{bode}\PYG{p}{(}\PYG{n}{CLTF}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{w}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} calculate bode plot}
+
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} create new figure}
+\PYG{n+nb}{set}\PYG{p}{(}\PYG{n+nb}{gcf}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Position\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{105}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{l+m+mi}{650}\PYG{+w}{ }\PYG{l+m+mi}{200}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set figure size}
+\PYG{n+nb}{semilogx}\PYG{p}{(}\PYG{n}{w}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{squeeze}\PYG{p}{(}\PYG{n}{b}\PYG{p}{));}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot magnitude}
+
+\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Frequency (rad/s)\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set x label}
+\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Phase (deg)\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set y label}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/Q4\PYGZus{}1\PYGZus{}3.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} create new figure}
+\PYG{n+nb}{set}\PYG{p}{(}\PYG{n+nb}{gcf}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Position\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{l+m+mi}{650}\PYG{+w}{ }\PYG{l+m+mi}{200}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set figure size}
+\PYG{n+nb}{semilogx}\PYG{p}{(}\PYG{n}{w}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{mag2db}\PYG{p}{(}\PYG{n+nb}{squeeze}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)));}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot magnitude}
+
+\PYG{n+nb}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Bode Diagram\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set title}
+\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Magnitude (dB)\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set y label}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/Q4\PYGZus{}1\PYGZus{}2.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+
+\PYG{n}{fb}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{bandwidth}\PYG{p}{(}\PYG{n}{CLTF}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZpc{} calculate bandwidth}
+\end{Verbatim}

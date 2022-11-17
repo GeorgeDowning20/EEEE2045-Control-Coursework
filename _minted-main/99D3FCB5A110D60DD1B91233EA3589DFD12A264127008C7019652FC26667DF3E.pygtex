@@ -1,0 +1,43 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Gp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{10}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plant transfer function}
+
+\PYG{n}{Kp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of proportonality to 1}
+\PYG{n}{Gc}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{n}{Kp}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} controller transfer function}
+\PYG{n}{G}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{Gc}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Gp}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} forward path transfer function}
+
+\PYG{n}{rlocus}\PYG{p}{(}\PYG{n}{G}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot root locus of forward path transfer function}
+\PYG{n}{sgrid}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} apply grid of s plane}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex5.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+
+\PYG{n}{Kp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of proportonality to 1}
+\PYG{n}{Ki}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{205}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of integration to 205}
+
+\PYG{n}{Gc}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{n}{Kp}\PYG{+w}{ }\PYG{n}{Kp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Ki}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} controller transfer function}
+\PYG{n}{G}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{G}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Gc}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} forward path transfer function}
+
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} create new figure}
+\PYG{n}{rlocus}\PYG{p}{(}\PYG{n}{G}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+\PYG{n}{sgrid}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} apply grid of s plane}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex5\PYGZus{}1.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+
+\PYG{n}{Kp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{39.1}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of proportonality to 38.9}
+\PYG{n}{Ki}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{205}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set constatnt of integration to 205}
+
+\PYG{n}{Gc}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{n}{Kp}\PYG{+w}{ }\PYG{n}{Kp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Ki}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} controller transfer function}
+\PYG{n}{G}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{G}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Gc}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} forward path transfer function}
+\PYG{n}{CLTF}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{feedback}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{c}{\PYGZpc{} closed loop transfer function}
+
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} create new figure}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{CLTF}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex5\PYGZus{}2.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+\end{Verbatim}

@@ -1,0 +1,131 @@
+\begin{equation}
+	\begin{split}
+		\frac{\theta\left(s\right)}{V_{motor}\left(s\right)} &= \frac{15}{\left(s\ +\ 150\right)\left(s\ +\ 8\right)}\\
+		&= \frac{15/150}{\left(s\ +\ 8\right)}\\
+        &= \frac{0.1}{\left(s\ +\ 8\right)}
+	\end{split}\label{eq:Q4_2_1}
+\end{equation}
+
+Equation~\eqref{eq:Q4_2_1} shows how the transfer function for the motor can be simplified from a third order equation to a second order equation. The root at -150 is several time larger than -8, therefore the root at -8 can be considered dominant and the transfer function can be simplified to a second order equation.
+
+\begin{equation}
+    \begin{split}
+        \omega_{0} &= \frac{-\ln(\frac{\%}{100})}{t\cdot\xi}\\
+        &=8.69338\ rad^s{-1}    \begin{cases}
+            \%=2 \\
+            t=0.75s \\
+            \xi=0.6\\
+        \end{cases}
+    \end{split}\label{eq:Q4_2_2}
+\end{equation}
+
+Equation~\eqref{eq:Q4_2_2} shows the calculation to find the natural frequency of the system. The natural frequency is found by using the formula for the natural frequency of a second order system with damping ratio $\xi$ and time constant $t$.
+
+\begin{equation}
+    \begin{split}
+        0&=s^{2}+2\omega_{0}\xi s\ +\omega_{0}^{2}\\
+        \therefore s&=-5.216028\pm j6.954704
+        \begin{cases}
+            \omega_0 = 8.69338 \\
+            \xi = 0.6 \\
+        \end{cases}
+    \end{split}\label{eq:Q4_2_3}
+    \end{equation}
+
+Equation~\eqref{eq:Q4_2_3} shows the calculation for the approximate position of the dominant poles based on the values of $\omega_0$ and $\xi$.
+
+    \begin{equation}
+        \begin{split}
+            G_{c}\left(s\right)=\frac{k\left(s+a\right)}{s} \hspace{1cm} G_{p}\left(s\right)=\frac{0.1}{s+8}
+        \end{split}\label{eq:Q4_2_4}
+    \end{equation}
+    
+    \begin{equation}
+        \begin{split}
+            0&=1\ +G_{p}\left(s\right)\cdot G_{c}\left(s\right)\\
+            &=s^{2}+2\omega_{0}\xi s\ +\omega_{0}^{2}\\
+            &=s^{2\ }+\left(8+0.1k\right)s+0.1ka\\
+        \end{split}\label{eq:Q4_2_5}
+    \end{equation}
+
+    The plant and general model for a PI controller are given by Eq.~\eqref{eq:Q4_2_4}. Setting the denominator of the system to zero, we re-arrange the controller to fit the general equation Eq.~\eqref{eq:Q4_2_5}.
+
+    \begin{equation}
+        \begin{split}
+            2\omega_{0}\xi &= 8+0.1k\\
+            \therefore k &= 24.32
+            \begin{cases}
+                \omega_0 = 8.6934 \\
+                \xi = 0.6 \\
+            \end{cases}\\
+        \end{split}\label{eq:Q4_2_6}
+    \end{equation}
+    
+    \begin{equation}
+        \begin{split}
+            \omega_{0}^{2} &= 0.1ka\\
+            \therefore a &= 31.0752    
+            \begin{cases}
+                \omega_0 = 8.6934 \\
+                k = 24.32 \\
+            \end{cases}
+        \end{split}\label{eq:Q4_2_7}
+    \end{equation}
+
+    Equation~\eqref{eq:Q4_2_6}-\eqref{eq:Q4_2_7} shows the calculation to find the constants of proportionality and integration $k$ and $a$ by comparing coefficients using Eq.~\eqref{eq:Q4_2_5} such that the system meets the specification set out by $\omega_0$ and $\xi$.
+
+    \begin{equation}
+        \begin{split}
+            G_c\left(s\right)=\frac{24.32\left(s+31.0752\right)}{s}\\
+        \end{split}\label{eq:Q4_2_8}
+    \end{equation}
+
+    Equation~\eqref{eq:Q4_2_8} shows the transfer function for the PI controller.
+
+    \renewcommand{\ex}{Q4_2} 
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Output/\ex.tex}
+    \caption{\appendixamble{\ex}}
+    \label{fig:\ex}
+\end{figure}\FloatBarrier
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Output/\ex_1.tex}
+    \caption{\appendixamble{\ex}}
+    \label{fig:\ex}
+\end{figure}\FloatBarrier
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Output/\ex_2.tex}
+    \input{matlab/Output/\ex_3.tex}
+    \caption{\appendixamble{\ex}}
+    \label{fig:\ex}
+\end{figure}\FloatBarrier
+
+\begin{figure}[ht!]
+    \centering
+    \inputminted[firstline=58,lastline=58]{matlab}{matlab/Q4_1.m}
+    \caption{MATLAB code used to calculate the bandwidth of the closed loop system}\label{fig:Q4code}
+\end{figure}\FloatBarrier
+
+The bandwidth of the closed loop system is there the gain is above -3dB. The bandwidth is calculated on matlabs using figure~\ref{fig:Q4code}. The result is 10.7049Hz.
+
+\begin{equation}
+    G_{p}= \frac{15}{s^{2}+158s+1200}
+\end{equation}
+
+\begin{equation}
+    G_{c}=\frac{24.32s+755.7}{s}
+\end{equation}
+
+\begin{equation}
+    G=\frac{364.8+11340}{s^{3}+158s^{2}+1200s}
+\end{equation}
+
+\begin{equation}
+    H=\frac{364.8s+11340}{s^{3}+158s^{2}+1565+11340}
+\end{equation}

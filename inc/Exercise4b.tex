@@ -1,8 +1,21 @@
 \renewcommand{\ex}{ex4b} 
 
+\begin{equation}
+	G_{p}\left(s\right)=\frac{100a}{\left(s^2 + 12s + 100\right)\left(s+a\right)}
+	\label{eq:\ex}
+\end{equation}
+
 \begin{figure}[ht!]
     \centering
     \input{matlab/Output/\ex.tex}
-    \caption{\appendixamble{\ex}}
+    \caption{Graph showing step response of the transfer function shown in \eqref{eq:\ex} where a = 5 (red), 7 (green), 10 (blue), 25 (black) and 35 (magenta).\appendixamble{\ex}}
     \label{fig:\ex}
 \end{figure}\FloatBarrier
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Output/\ex_1.tex}
+    \caption{Graph showing Pole-Zero Map of the transfer function shown in \eqref{eq:\ex} where a = 5 (red), 7 (green), 10 (blue), 25 (black) and 35 (magenta), The poles at -6$\pm j8$ exist for all values of a. \appendixamble{\ex}}
+    \label{fig:\ex_2}
+\end{figure}\FloatBarrier
+

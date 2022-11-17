@@ -1,0 +1,101 @@
+\begin{equation}
+\begin{split}
+    0&=s^{2}+2\omega_{0}\xi s\ +\omega_{0}^{2}\\
+    \therefore s&=-13.5\pm j\frac{3\sqrt{19}}{2}
+    \begin{cases}
+        \omega_0 = 15 \\
+        \xi = 0.9 \\
+    \end{cases}
+\end{split}\label{eq:Q4_1_1}
+\end{equation}
+
+Equation~\eqref{eq:Q4_1_1} shows the calculation for the approximate position of the dominant poles based on the values of $\omega_0$ and $\xi$.
+
+\begin{equation}
+    \begin{split}
+        G_{c}\left(s\right)=\frac{k\left(s+a\right)}{s} \hspace{1cm} G_{p}\left(s\right)=\frac{6}{15s+1}
+    \end{split}\label{eq:Q4_1_2}
+\end{equation}
+
+\begin{equation}
+    \begin{split}
+        0&=1\ +G_{p}\left(s\right)\cdot G_{c}\left(s\right)\\
+        &=s^{2}+2\omega_{0}\xi s\ +\omega_{0}^{2}\\
+        &=s^{2}+\frac{\left(6k+1\right)}{15}s+\frac{6ka}{15} \\
+    \end{split}\label{eq:Q4_1_3}
+\end{equation}
+
+The plant and general model for a PI controller are given by Eq.~\eqref{eq:Q4_1_2}. Setting the denominator of the system to zero, we re-arrange the controller to fit the general equation Eq.~\eqref{eq:Q4_1_3}.
+
+\begin{equation}
+    \begin{split}
+        2\omega_{0}\xi &= \frac{\left(6k+1\right)}{15}\\
+        \therefore k &= 67.33
+        \begin{cases}
+            \omega_0 = 15 \\
+            \xi = 0.9 \\
+        \end{cases}\\
+    \end{split}\label{eq:Q4_1_4}
+\end{equation}
+
+\begin{equation}
+    \begin{split}
+        \omega_{0}^{2} &= \frac{6ka}{15}\\
+        \therefore a &= 8.354    \begin{cases}
+            \omega_0 = 15 \\
+            k = 67.33 \\
+        \end{cases}
+    \end{split}\label{eq:Q4_1_5}
+\end{equation}
+
+Equation~\eqref{eq:Q4_1_4}-\eqref{eq:Q4_1_5} shows the calculation to find the constants of proportionality and integration $k$ and $a$ by comparing coefficients using Eq.~\eqref{eq:Q4_1_3} such that the system meets the specification set out by $\omega_0$ and $\xi$.
+
+\begin{equation}
+    \begin{split}
+        G\left(s\right)= \frac{6}{15s+1}\cdot\frac{K\left(s+8.354\right)}{s}\\
+    \end{split}\label{eq:Q4_1_6}
+\end{equation}
+
+\renewcommand{\ex}{Q4_1} 
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Output/\ex.tex}
+    \caption{Root Locus plot of the forward path transfer function \eqref{eq:Q4_1_6} \appendixamble{\ex}}
+    \label{fig:\ex}
+\end{figure}\FloatBarrier
+
+Figure~\ref{fig:\ex} shows the root locus plot passing through the poles at $-13.5\pm j\frac{3\sqrt{19}}{2}$ as found in Eq.~\eqref{eq:Q4_1_1}. The gain at  $-13.5\pm j\frac{3\sqrt{19}}{2}$ is 67.33 confirming the value found in Eq.~\eqref{eq:Q4_1_4} to be correct.
+
+\begin{equation}
+    \begin{split}
+        G_c\left(s\right)=\frac{67.33\left(s+8.354\right)}{s}\\
+    \end{split}\label{eq:Q4_1_7}
+\end{equation}
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Output/\ex_1.tex}
+    \caption{Step Response of the closed loop transfer function where the plant is given by Eq.~\eqref{eq:Q4_1_2} and controller Eq.~\eqref{eq:Q4_1_7}. \appendixamble{\ex}}
+    \label{fig:\ex_1}
+\end{figure}\FloatBarrier
+
+Figure~\ref{fig:\ex_1} shows the step response of the closed loop transfer function. The step response is shown to be within the specification of $\omega_0 = 15$ and $\xi = 0.9$.\\
+
+The final solution to this question for the design of a PI controller is given by Eq.~\eqref{eq:Q4_1_7}.
+
+\begin{figure}[ht!]
+    \centering
+    \input{matlab/Output/\ex_2.tex}
+    \input{matlab/Output/\ex_3.tex}
+    \caption{Bode Diagram of the closed loop transfer function where the plant is given by Eq.~\eqref{eq:Q4_1_2} and controller Eq.~\eqref{eq:Q4_1_7}. \appendixamble{\ex}}
+    \label{fig:\ex_2}
+\end{figure}\FloatBarrier
+
+\begin{figure}[ht!]
+    \centering
+    \inputminted[firstline=58,lastline=58]{matlab}{matlab/Q4_1.m}
+    \caption{MATLAB code used to calculate the bandwidth of the closed loop system}\label{fig:Q4code1}
+\end{figure}\FloatBarrier
+
+Figure~\ref{fig:\ex_2} shows the Bode Diagram for the closed loop transfer function. The bandwidth of the closed loop system is defined as when the gain is above -3dB. The bandwidth is calculated on matlabs using figure~\ref{fig:Q4code1}. The result is 34.785Hz.

@@ -15,22 +15,50 @@
 \tableofcontents
 
 
-
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Aim of the Lab}\label{sec:aim}
 
-\pagebreak
+The aim of this Lab is to complete a set of exercises to demonstrate the understanding of the concepts of control systems. The exercises are based on the material covered in the lectures and the textbook. \\
+
+Two design questions will also be completed, proving the understanding of the concepts of control systems, and the ability to apply them to a real world problem.\\
+
+Matlab will be used to complete the exercises and design questions. The ability to use Matlab will be demonstrated by the through the use of commands and functions required.
+The code used to complete the exercises and design questions will be included in the report.\\
+
+Problems will be approached both mathmatically and graphically where appropriate. The graphs will be included in the report. \\
+
+Analysis of system/plant/controller/feedback transfers functions for open and closed loop control systems will be demonstrated including the use of step response plots and root locus plots.\\
+
+The concept of reducing transfer functions by analyzing the dominant roots is looked at and presented through the use of S-plane and Root locus plots.\\
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Approach}\label{sec:approach}
 
-git source Control using github full repo available
-report written in latex
-installation of matlab's control sandbox
-integration of matlab's scripts withing latex to produce graphs 
-running of matlab's scripts from terminal to produce output tex files. whens matlabs script is run latex document updated with latest plots
+Firstly a project folder was created, to manage the workspace for the report and the matlab scripts. The necessary files were then added to the project folder including a title page and LaTex template. The files were then added to the git repository. The git repository was then pushed to github.\\
+
+The report was writen in LaTex using TeX Live 2019/Debian. The --shell-escape flag must be used when compiling the report to give the latex script access to shell commands. This allows the latex script to run matlab's scripts from the terminal and input tikz pictures correctly .\\ 
+
+The project required the use of matlab's control toolbox and matlab2tikz. The control toolbox and matlab2tikz were installed using the matlab package manager.\\
+
+The matlab scripts were then written to produce the graphs required for the report. The matlab scripts were then integrated into the latex document using the matlab2tikz package.\\
+
+Three primary matlab commands were used to create the graphs. step,rlocus and bode were used to create step response, root locus s-plane plots and bode diagrams respectively.the function matlab2tikz was then used to create a .tex file, to be included in the document.\\
+
+The workspace as as above allows for any changes in the matlabs code, to be reflected in the report at run time, including automatically updating the graphs and appendix.\\
+
+All figures, graphs, equations and tables were numbered, referenced and hyperlinked in the report, for easy viewing. A contents page was automatically generated, including sections,subsections, appendix and references.\\
+
+For each exercise, the relevant mathematical notation for each system was written out in the report. The instructions were accurately followed to produce the necessary output. The graphs were included in the report using matlab2tikz. The Matlab code was then linked to the appendix. further comments and explanations were then added including graphs, equations and table were appropriate. \\
+
+For each Question, the Initial constants were calculated from the given information in the question. Where the second question required simplification, justification and explanation was given. The problems were first solved mathematically then checked using a bode plot to ensure the correct answer was obtained graphically. The final answer was then compared against the initial specification using a step response plot of the closed loop transfer function. finally a bode plot was used to visualize the system and ascertain its bandwidth  \\
+
+
+
+
+
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -38,7 +66,6 @@ running of matlab's scripts from terminal to produce output tex files. whens mat
 
 \subsection{Exercise 1}\label{sec:ex1}
 \input{inc/Exercise1.tex}
-
 \subsection{Exercise 2}\label{sec:ex2}
 \input{inc/Exercise2.tex}
 \subsection{Exercise 3}\label{sec:ex3}
@@ -48,12 +75,15 @@ running of matlab's scripts from terminal to produce output tex files. whens mat
 \subsection{Exercise 4b}\label{sec:ex4b}
 \input{inc/Exercise4b.tex}
 \subsection{Exercise 5}\label{sec:ex5}
-
+\input{inc/Exercise5.tex}
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Design Questions and Solutions}\label{sec:design}
-
+\section{Design Questions and Solutions}\label{sec:Q4}
+\subsection{1}
+\input{inc/Question4_1.tex}\label{sec:Q4_1}
+\subsection{2}
+\input{inc/Question4_2.tex}\label{sec:Q4_2}
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -62,7 +92,6 @@ running of matlab's scripts from terminal to produce output tex files. whens mat
 
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \addcontentsline{toc}{section}{References}
 \bibliographystyle{IEEEtranN}
@@ -91,6 +120,14 @@ running of matlab's scripts from terminal to produce output tex files. whens mat
 \subsubsection{Ex4b: (\ref{sec:ex4b})}\label{appendix:ex4b}
 \inputminted{matlab}{matlab/ex4b.m}
 
+\subsubsection{Ex5: (\ref{sec:ex5})}\label{appendix:ex5}
+\inputminted{matlab}{matlab/ex5.m}
+
+\subsubsection{Q4.1: (\ref{sec:Q4_1})}\label{appendix:Q4_1}
+\inputminted{matlab}{matlab/Q4_1.m}
+
+\subsubsection{Q4.2: (\ref{sec:Q4_2})}\label{appendix:Q4_2}
+\inputminted{matlab}{matlab/Q4_2.m}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}

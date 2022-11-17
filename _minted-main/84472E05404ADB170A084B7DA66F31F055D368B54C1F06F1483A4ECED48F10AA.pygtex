@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Gp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{20}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plant transfer function}
+\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+\PYG{n+nb}{axis}\PYG{p}{([}\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{l+m+mf}{0.45}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{l+m+mf}{1.1}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Set the axis limits}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} cleanfigure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex1.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+\end{Verbatim}

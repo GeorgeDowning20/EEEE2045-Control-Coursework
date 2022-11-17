@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} new figure}
+\PYG{n+nb}{hold}\PYG{+w}{ }\PYG{n}{on}\PYG{p}{;}
+
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mf}{0.2}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mf}{0.6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}g\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mf}{1.2}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}b\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mf}{1.6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mf}{3.0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}plot response of dampend plant}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{}cleanfigure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex4a.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{}convert to tex}
+
+\PYG{k}{function}\PYG{+w}{ }[]\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{PlotPlantResponse}\PYG{p}{(}a, colour\PYG{p}{)}
+\PYG{+w}{    }\PYG{n+nb}{time}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mf}{0.01}\PYG{p}{:}\PYG{l+m+mi}{6}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{}time vector}
+\PYG{+w}{    }\PYG{n}{Gp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{10}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plant transfer function}
+\PYG{+w}{    }\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{Gp}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{time}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{colour}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+\PYG{k}{end}
+\end{Verbatim}

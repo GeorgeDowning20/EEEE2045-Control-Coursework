@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} new figure}
+\PYG{n+nb}{hold}\PYG{+w}{ }\PYG{n}{on}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} hold on to the figure}
+
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}g\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}b\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mi}{25}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{PlotPlantResponse}\PYG{p}{(}\PYG{l+m+mi}{35}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex4b.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{n+nb}{figure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} new figure}
+\PYG{n+nb}{hold}\PYG{+w}{ }\PYG{n}{on}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} hold on to the figure}
+\PYG{n}{sgrid}\PYG{+w}{ }\PYG{l+s}{on}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} turn on the grid}
+\PYG{n}{pzmapResponse}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{pzmapResponse}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}g\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{pzmapResponse}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}b\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{pzmapResponse}\PYG{p}{(}\PYG{l+m+mi}{25}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{pzmapResponse}\PYG{p}{(}\PYG{l+m+mi}{35}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} plot response of dampend plant}
+\PYG{n}{h}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{findobj}\PYG{p}{(}\PYG{n+nb}{gca}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}type\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}line\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} get all lines}
+\PYG{n+nb}{set}\PYG{p}{(}\PYG{n}{h}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}markersize\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}linewidth\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{1.2}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set line width}
+\PYG{n+nb}{axis}\PYG{p}{([}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{9}\PYG{+w}{ }\PYG{l+m+mi}{9}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} set axis}
+
+\PYG{n}{cleanfigure}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} clean figure}
+\PYG{n}{matlab2tikz}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Output/ex4b\PYGZus{}1.tex\PYGZsq{}}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} convert to tex}
+
+\PYG{k}{function}\PYG{+w}{ }[]\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{PlotPlantResponse}\PYG{p}{(}a, colour\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{Gp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{100}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{12}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{]);}
+\PYG{+w}{    }\PYG{n}{Temp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{n}{a}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is a/(s+a) for a=1}
+\PYG{+w}{    }\PYG{n}{G}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{Gp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Temp}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Multiply them both together}
+\PYG{+w}{    }\PYG{n+nb}{step}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{colour}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+\PYG{k}{end}
+
+\PYG{k}{function}\PYG{+w}{ }[]\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{pzmapResponse}\PYG{p}{(}a, colour\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{Gp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{l+m+mi}{100}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{l+m+mi}{12}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{]);}
+\PYG{+w}{    }\PYG{n}{Temp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{tf}\PYG{p}{([}\PYG{n}{a}\PYG{p}{],}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{]);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} this is a/(s+a) for a=1}
+\PYG{+w}{    }\PYG{n}{G}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{Gp}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{Temp}\PYG{p}{;}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Multiply them both together}
+\PYG{+w}{    }\PYG{n}{pzplot}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{colour}\PYG{p}{);}\PYG{+w}{ }\PYG{c}{\PYGZpc{} Plot the unity step response}
+\PYG{k}{end}
+\end{Verbatim}
