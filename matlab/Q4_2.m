@@ -1,26 +1,20 @@
 Gp = tf([15], [1 150]) * tf([1], [1 8]); % plant transfer function
 
-Kp = 1; % set constatnt of proportonality to 1
+Kp = 24.32; % set constatnt of proportonality to 67.333
 Ki = 31.075; % set constatnt of integration to 8.354
 
-Gc = tf([Kp * 1 Kp * Ki], [1 0]); % controller transfer function
+Gc = tf([Kp * 1 Kp * Ki], [1 0]) % controller transfer function
 G = Gp * Gc; % forward path transfer function
+CLTF = feedback(G, 1); % closed loop transfer function
 
 figure; % create new figure
-rlocus(G); % Plot the unity step response
+rlocus(CLTF); % Plot the unity step response
 sgrid; % apply grid of s plane
 
 cleanfigure; % clean figure
 matlab2tikz('Output/Q4_2.tex'); % convert to tex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Kp = 24.32; % set constatnt of proportonality to 67.333
-Ki = 31.075; % set constatnt of integration to 8.354
-
-Gc = tf([Kp * 1 Kp * Ki], [1 0]); % controller transfer function
-G = Gp * Gc; % forward path transfer function
-CLTF = feedback(G, 1); % closed loop transfer function
 
 figure; % create new figure
 step(CLTF); % Plot the unity step response

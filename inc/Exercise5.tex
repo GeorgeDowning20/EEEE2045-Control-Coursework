@@ -1,4 +1,4 @@
-\renewcommand{\ex}{ex5} 
+\renewcommand{\ex}{ex5}
 
 \begin{equation}
 	G_{p}\left(s\right)=\frac{10}{s + 10}
@@ -6,36 +6,38 @@
 \end{equation}
 
 \begin{equation}
-    \begin{split}
-        G\left(s\right) &= G_{p}\left(s\right)\cdot G_{c}\left(s\right)\\
-        &=\frac{k \cdot 10}{s + 10}
-        \begin{cases}
-            G_{c}\left(s\right)=k
-        \end{cases}\\
-    \end{split}
-    \label{eq:\ex_1}
+	\begin{split}
+		G\left(s\right) &= G_{p}\left(s\right)\cdot G_{c}\left(s\right)\\
+		&=\frac{k \cdot 10}{s + 10}\\
+	\end{split}
+	\label{eq:\ex_1}
 \end{equation}
+
+\begin{conditions}
+	G_{p}\left(s\right) & $\frac{10}{s + 10}$ \\
+	G_{c}\left(s\right) & k
+\end{conditions}\\
 
 \begin{equation}
-    \begin{split}
-        G\left(s\right) &= G_{p}\left(s\right)\cdot G_{c}\left(s\right)\\
-        &=\frac{10}{s + 10} \cdot \frac{k\left(s+a\right)}{s}
-        \begin{cases}
-            G_{c}\left(s\right)=\frac{k\left(s+a\right)}{s}
-        \end{cases}\\
-        &=\frac{10k\left(s+205\right)}{s\left(s+10\right)}
-        \begin{cases}
-            a=205
-        \end{cases}\\
-    \end{split}
-    \label{eq:\ex_2}
+	\begin{split}
+		G\left(s\right) &= G_{p}\left(s\right)\cdot G_{c}\left(s\right)\\
+		&=\frac{10}{s + 10} \cdot \frac{k\left(s+a\right)}{s} \\
+		&=\frac{10k\left(s+205\right)}{s\left(s+10\right)}\\
+	\end{split}
+	\label{eq:\ex_2}
 \end{equation}
 
+\begin{conditions}
+	G_{p}\left(s\right) & $\frac{10}{s + 10}$ \\
+	G_{c}\left(s\right) & k\\
+	a & 205
+\end{conditions}\\
+
 \begin{figure}[ht!]
-    \centering
-    \input{matlab/Output/\ex.tex}
-    \caption{Root Locus plot of the forward path transfer function \eqref{eq:\ex_1} of a proportional controller applied to plant \eqref{eq:\ex} \appendixamble{\ex}}
-    \label{fig:\ex}
+	\centering
+	\input{matlab/Output/\ex.tex}
+	\caption{Root Locus plot of the forward path transfer function \eqref{eq:\ex_2} of a proportional controller applied to plant \eqref{eq:\ex} \appendixamble{\ex}}
+	\label{fig:\ex}
 \end{figure}\FloatBarrier
 
 Figure~\ref{fig:\ex} only has one pole on the real axis, which is at $s = -10$. This means that the system is stable. The root locus plot shows that the system is stable for all positive values of $k$. However it does not pass through out design point at $-200 \pm j200$ and does not meet the design specification. \\
@@ -44,31 +46,32 @@ Therefore in order to meet the design specification we need a second order contr
 
 
 \begin{figure}[ht!]
-    \centering
-    \input{matlab/Output/\ex_1.tex}
-    \caption{Root Locus plot of the forward path transfer function \eqref{eq:\ex_2} of a proportional Integral controller applied to plant \eqref{eq:\ex} \appendixamble{\ex}}
-    \label{fig:\ex_1}
+	\centering
+	\input{matlab/Output/\ex_1.tex}
+	\caption{Root Locus plot of the forward path transfer function \eqref{eq:\ex_2} of a proportional Integral controller applied to plant \eqref{eq:\ex} \appendixamble{\ex}}
+	\label{fig:\ex_1}
 \end{figure}\FloatBarrier
 
 Figure~\ref{fig:\ex_1} shows that the system is stable for all positive values of $k$ and passes through the design point at $-200 \pm j200$, where k = 39.1. This means that the system meets the design specification and is the same value for k as mathematically calculated.
 
 \begin{figure}[ht!]
-    \centering
-    \input{matlab/Output/\ex_2.tex}
-    \caption{Step Response of the forward path transfer function \eqref{eq:\ex_2} of a proportional Integral controller applied to plant \eqref{eq:\ex} \appendixamble{\ex}}
-    \label{fig:\ex_2}
+	\centering
+	\input{matlab/Output/\ex_2.tex}
+	\caption{Step Response of the forward path transfer function \eqref{eq:\ex_2} of a proportional Integral controller applied to plant \eqref{eq:\ex} \appendixamble{\ex}}
+	\label{fig:\ex_2}
 \end{figure}\FloatBarrier
 
 \begin{equation}
-    \begin{split}
-        \omega_{0} &= \frac{-\ln(\frac{\%}{100})}{t\cdot\xi}\\
-        &=8.69338\ rad^s{-1}    \begin{cases}
-            \%=2 \\
-            t=0.75s \\
-            \xi=0.6\\
-        \end{cases}
-    \end{split}\label{eq:\ex_2}
+	\begin{split}
+		\omega_{0} &= \frac{-\ln(\frac{\%}{100})}{t\cdot\xi}\\
+		&=8.69338\ rad^s{-1}\\
+	\end{split}\label{eq:\ex_2}
 \end{equation}
 
+\begin{conditions}
+	\% & 2    \\
+	t & 0.75s \\
+	\xi & 0.6 \\
+\end{conditions}\\
 
-Figure~\ref{fig:\ex_2} shows the step response of the system. The system is stable and the output is as expected. at 20ms the amplitude is 0.948. this is outside of the specified response of $\pm 2\%$ at 20ms. At 27.3ms the response is within the $\pm 2\%$. This is because the equation \eqref{eq:\ex_2} used to calulate $\omega_0$ is based off a first order decay. The system is second order therefore is only approximated by this equation.
+Figure~\ref{fig:\ex_2} shows the step response of the system. The system is stable and the output is as expected. at 20ms the amplitude is 0.948. this is outside of the specified response of $\pm 2\%$ at 20ms. At 27.3ms the response is within the $\pm 2\%$. This is because the equation \eqref{eq:\ex_2} used to calculate $\omega_0$ is based off a first order decay. The system is second order therefore is only approximated by this equation.
