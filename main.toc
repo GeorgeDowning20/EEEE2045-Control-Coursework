@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {2}Approach}{2}{section.2}%
 \contentsline {section}{\numberline {3}Results and Discussion}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Exercise 1}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Exercise 2}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Exercise 3}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.2}Exercise 2}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Exercise 3}{8}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Exercise 4a}{9}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Exercise 4b}{11}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Exercise 5}{13}{subsection.3.6}%
